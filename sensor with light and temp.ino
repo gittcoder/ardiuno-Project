@@ -21,6 +21,7 @@ void loop()
   while(Wire.available()==0);
   int c=Wire.receive();
   Serial.print(c);//temperature in celcius
-  Serial.print('C');
+  Serial.print("C,");
+ Serial.print("LI");
  Serial.print(light);//light intensity
 }
